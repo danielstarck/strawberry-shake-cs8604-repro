@@ -1,0 +1,9 @@
+query GetSessions {
+    something {
+        ... on Something {
+            fieldB {
+                someField
+            }
+        }
+    }
+}

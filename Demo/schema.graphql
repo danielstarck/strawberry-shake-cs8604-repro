@@ -1,0 +1,18 @@
+﻿schema {
+  query: Query
+}
+
+type Query {
+  something: ISomething
+}
+
+union ISomething = Something
+
+type Something {
+  fieldB: NonNullType!
+  id: ID!
+}
+
+type NonNullType {
+  someField: String!
+}
